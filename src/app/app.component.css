@@ -1,0 +1,14 @@
+.header {
+    padding: 5px;
+    text-align: center;
+    background: rgb(255, 154, 159);
+    color: white;
+    font-size: x-large;
+  }
+  .footer {
+    padding: 5px;
+    text-align: center;
+    background: rgb(255, 154, 159);
+    color: white;
+    font-size: x-large;
+  }

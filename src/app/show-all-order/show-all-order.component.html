@@ -1,0 +1,71 @@
+<body>
+    <h1>Show All Order :</h1>
+    <form>
+        <div *ngIf="a">
+            <ul *ngFor="let items of vieworder">
+            <li><b>ORDER ID :</b>{{items.orderid}}</li>
+            <li><b>PRODUCT NAME :</b>{{items.productname}}</li>
+            <li><b>PRODUCT QUANTITY :</b>{{items.productquantity}}</li>
+            <li><b>PRODUCT PRICE :</b>{{items.productprice}}</li>
+            <li><b>ADDRESS :</b>{{items.address}}</li>
+            <li><b>PAYMENT METHOD :</b>{{items.paymentmethod}}</li>
+            <li><b>STATUS :</b>{{items.status}}</li>
+            <li><b>MOBILE :</b>{{items.mobile}}</li>
+            <li><b>EMAIL ID :</b>{{items.email}}</li>
+            <li><b>FIRST NAME :</b>{{items.firstname}}</li>
+            <li><b>LAST NAME :</b>{{items.lastname}}</li>
+            <li><b>ISACTIVE :</b>{{items.isActive}}</li>
+            <li><b>CREATED ON :</b>{{items.createdOn}}</li>
+            </ul>
+        </div>
+        <div *ngIf="b">
+            <p>{{vieworder}}</p>
+        </div>
+    </form>
+
+    <h1>Show All Placed Order Count :</h1>
+    <form>
+        <div *ngIf="x">
+            <ul *ngFor="let items of placedorder">
+                <li><b>PRODUCT NAME :</b>{{items._id.productname}}</li>
+                <li><b>PRODUCT QUANTITY :</b>{{items._id.productquantity}}</li>
+                <li><b>PRODUCT PRICE :</b>{{items._id.productprice}}</li>
+                <li><b>TOTAL PRICE :</b>{{items._id.totalprice}}</li>
+                <li><b>COUNT :</b>{{items.count}}</li>
+            </ul>
+        </div>
+        <div *ngIf="y">
+            <p><b>{{placedorder}}</b></p>
+        </div>
+    </form>
+
+    <h1>Show all Purchased order count :</h1>
+    <form>
+        <div *ngIf="w">
+            <ul *ngFor="let items of purchasedorder">
+                <li><b>PRODUCT NAME :</b>{{items._id.productname}}</li>
+                <li><b>PRODUCT QUANTITY :</b>{{items._id.productquantity}}</li>
+                <li><b>PRODUCT PRICE :</b>{{items._id.productprice}}</li>
+                <li><b>TOTAL PRICE :</b>{{items._id.totalprice}}</li>
+                <li><b>COUNT :</b>{{items.count}}</li>
+            </ul>
+        </div>
+        <div *ngIf="e">
+            <p><b>{{purchasedorder}}</b></p>
+        </div>
+    </form>
+
+
+    <h1>show all cancle orders :</h1>
+    <form>
+        <div>
+            <ul *ngFor="let items of cancleReco">
+                <li><b>PRODUCT NAME :</b>{{items._id.productname}}</li>
+                <li><b>PRODUCT QUANTITY :</b>{{items._id.productquantity}}</li>
+                <li><b>PRODUCT PRICE :</b>{{items._id.productprice}}</li>
+                <li><b>TOTAL PRICE :</b>{{items._id.totalprice}}</li>
+                <li><b>COUNT :</b>{{items.count}}</li>
+            </ul>
+        </div>
+    </form>
+</body>
